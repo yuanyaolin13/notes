@@ -1,29 +1,118 @@
 \documentclass[12pt]{article}
 \usepackage{booktabs}
 \usepackage{float}
+\usepackage{import}
+\usepackage{xifthen}
+\usepackage{pdfpages}
+\usepackage{transparent}
+
+%%%%%%%%%%%%%% LATEX SAMPLE FILE %%%%%%%%%%%%%%%%
+% A line which starts with a % sign
+% is called a COMMENT. It is IGNORED
+% by the LaTeX processor.
+
+% Include math
+\usepackage{amsmath,amsthm,amssymb}
+% Include links
+\usepackage{hyperref}
+
+
+%%%%%%%%%%%%%  THEOREMS  %%%%%%%%%%%%%%%%%
+% Let's define some theorem environments
+% To use later in the paper
+\theoremstyle{plain} % other options: definition, remark
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+% By including [theorem], the lemma follows the numbering of theorem
+% e.g. Thm 1, Lemma 2, Thm 3, Thm 4, \dots
+\theoremstyle{definition}
+\newtheorem*{definition}{Definition} % the star prevents numbering
+
+% Remarks
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}
+
+
+%%%%%%%%%%%%%%  PAGE SETUP %%%%%%%%%%%%%%%%%
+% LaTeX has big default margins
+% The following sets them to 1in
+\usepackage[margin=1.5in]{geometry}
+
+% The following sets up some headers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{An Example LaTeX Document} % Left Header
+\rhead{\thepage} % Right Header
+\cfoot{} % Center Foot (empty)
+\newcommand{\half}{\frac{1}{2}}
 
 \begin{document}
-\title{CompEX}
-\maketitle
+
+\title{An Example LaTeX Document}
+\author{Yuanyao Lin}
+\date{\today}
+\maketitle 
+
+\begin{abstract}
+    A simple little testing document to get accustomed to \LaTeX\ !
+\end{abstract}
+
+\tableofcontents
+
+% Start of the new page!
+\eject
+
+\begin{quote}
+    \textbf{Golden Rule}: Do not do anything manually if you can avoid it.
+
+    Often, \LaTeX\ can do it, and can do it better than you can.
+\end{quote}
+
+\section{Testing Sections}
+blah blah backslashes 
 \[
-    he_{l} o
+  \sigma = \delta
 \]
-\(2000 g\infty n\) 
-If we know the speed of light, \(c\), we can compute 
+\eject
+
+\section{Math stuffs}
+\subsection{Inline Math}
+\begin{verbatim}
+    This is also known as: "\(\)" or "im" with SleepyMalc shortcuts
+\end{verbatim}
+
+$e^{i \pi} = -1$ or $\half \cdot 2 = 1$.
+\subsection{Display Math}
+\begin{verbatim}
+    This is also known as: "\[\]" or "dm" with SleepyMalc shortcuts
+\end{verbatim}
 \[
-    E = mc^2\{ 2\} 
-\] 
-    \begin{table}[H]
-        \centering
-        \begin{tabular}{c|c|c|c|c}
-            \toprule
-                &  &  &  &   \\
-            \midrule
-                &  &  &  &   \\
-            \bottomrule
-        \end{tabular}
-        \caption{hello}
-        \label{tab:label}
-    \end{table}
-    Jae :D
+    \sum_{k=1}^n k^3 = \left( \sum_{k=1}^n k \right)^2.
+\]
+
+\eject
+
+\section{Numbered and Bulleted Lists}
+\begin{quote}
+    This is an introduction to \LaTeX's lists
+\end{quote}
+\begin{verbatim}
+    This is a number list using the "enumerate" and \item environment name
+\end{verbatim}
+\begin{enumerate}
+\item yay i am in in a list
+\item Nested as well 
+    \begin{enumerate}
+        \item nested enumerate test.
+    \end{enumerate}
+\end{enumerate}
+
+\begin{verbatim}
+    This is a bullet list using the "itemize" environment name
+\end{verbatim}    
+\begin{itemize}
+    \item HELO
+\end{itemize}
+
+
 \end{document}
