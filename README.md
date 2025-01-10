@@ -11,4 +11,3 @@ Heavily inspired by a friend and [this repo](https://github.com/sleepymalc/VSCod
     - [COMP 590](#comp-590)
     - [COMP 433](#comp-433)
     - [COMP 447](#comp-447)
->Repo will be used during 2025 Spring, these are placeholders :)
