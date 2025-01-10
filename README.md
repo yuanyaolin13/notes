@@ -5,13 +5,10 @@ Heavily inspired by a friend and [this repo](https://github.com/sleepymalc/VSCod
 
 ## Table of Contents
 
-- [2024](#2024) 
-    - [COMP 211](#comp-211)
-    - [COMP 301](#comp-301)   
-    - [STOR 435](#stor-435)
+- [2025](#2025) 
+    - [ASIA 211](#asia-211)
+    - [COMP 311](#comp-311)   
+    - [COMP 590](#comp-590)
+    - [COMP 433](#comp-433)
+    - [COMP 447](#comp-447)
 >Repo will be used during 2025 Spring, these are placeholders :)
-# 2024
-## COMP 211
-## COMP 301
-## STOR 435
-?
