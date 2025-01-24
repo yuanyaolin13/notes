@@ -6,7 +6,6 @@ Heavily inspired by a friend and [this repo](https://github.com/sleepymalc/VSCod
 ## Table of Contents
 
 - [2025](#2025) 
-    - [ASIA 211](#asia-211)
     - [COMP 311](#comp-311)   
     - [COMP 590](#comp-590)
     - [COMP 433](#comp-433)
